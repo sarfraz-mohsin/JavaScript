@@ -98,3 +98,12 @@ function wordBlanks(myNoun, myAdjective, myVerb, myAverb)
 
 console.log(wordBlanks("dog","big","ran","quickly"))
 
+//Arrays
+
+var myArray = ["asif", 3];
+
+//Nester array
+
+var nestArr = [["asif", 1],["tabish",2]];
+var sarArr = ["sarfraz", 15];
+
