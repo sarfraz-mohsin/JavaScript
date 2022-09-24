@@ -12,3 +12,9 @@ console.log(fruits[3]);
 
 fruits.pop('banana');
 console.log(fruits[0]);
+
+//Slicing the array
+
+console.log(fruits.slice(0,2));
+
+//Important array methods are (length, indexOf, push, slice)
