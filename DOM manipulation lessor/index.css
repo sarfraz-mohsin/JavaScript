@@ -1,0 +1,25 @@
+#container{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    background-color: black;
+}
+
+#red{
+    background-color: red;
+    height: 100px;
+    width: 100px;   
+}
+
+#yellow{
+    background-color: yellow;
+    height: 100px;
+    width: 100px;   
+}
+
+#green{
+    background-color: green;
+    height: 100px;
+    width: 100px;   
+}

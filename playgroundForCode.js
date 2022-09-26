@@ -6,3 +6,4 @@ const actors = [
 
 let result = console.log(actors.filter(actor => actor.netWorth > 10));
 let names = console.log(actors.map(actor => actor.name).join(' , '));       
+let sumOfNewWorth = console.log(actors.map(actor =>actor.netWorth).reduce((prew, curr) => prew+curr));
