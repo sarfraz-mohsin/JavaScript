@@ -1,0 +1,27 @@
+.passenger{
+    display: flex;
+    flex-direction: column;
+    height: 260px;
+    width: 300px;
+    border: none;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.text{
+    color: white;
+}
+
+#increment-btn{
+    margin-bottom: 4px;
+}
+#save-btn{
+    margin-bottom: 4px;
+}
+
+#save-el{
+    color: white;
+}
