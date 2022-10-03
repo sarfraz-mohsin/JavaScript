@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Learning</title>
+</head>
+<body>
+    <!-- <button id="todobtn" onclick="done()">Click to Save</button> -->
+
+    <div id="counter" onclick="">0</div>
+    <button id="upbtn" onclick="increment()">Up</button>
+    <button id="downbtn" onclick="decrement()">Down</button>
+    <br>
+    <input id="textbox" type="text" name="" id="">
+    <button id="copybtn" onclick="copy()">Copy</button>
+    <script>
+        /*
+        Exercise 1
+        
+        console.log('Sarfraz Mohsin');*/
+
+        /*
+        Exercise 2
+
+        let todo1 = 99;
+        typeof'todo1'
+
+        let month= 'November', dayOfMonth = 9, year= 2021;
+        console.log(month + ' ' + dayOfMonth + ', ' + year);
+
+        let maths1 = 4+5*3;
+        console.log(maths1);
+        let maths2 = (4+5)*3;
+        console.log(maths2);
+
+        let age = 21;
+        let message = 'I am'+ age+ 'years old';
+        console.log(typeof 'message');*/
+
+        /*
+        Exercise 5
+
+        let btntxt = 'Click Me'
+        let btn = document.createElement('Button');
+        btn.innerText = btntxt;
+        document.body.appendChild(btn);
+
+        let titletxt = 'Core Javascript Learning';
+        document.title = titletxt; */
+
+        /*
+        Exercise 6
+
+        function greeting(firstName){
+            console.log('Hello '+ firstName);
+        }
+
+        greeting('Simon');
+
+        function toUpper(str){
+            console.log(str.toUpperCase());
+        }
+        
+        toUpper('Simon') */
+
+        /*
+        Example 7
+
+        let arrStrings = ['hello', 'hi', 'how are you'];
+        arrStrings.forEach(
+            function toUpper(strings){
+            console.log(strings.toUpperCase());
+        }
+        )
+
+        let myArray = ['Sarfraz', 'Mohsin']
+        
+        function arrayDouble(arrayItems){
+            let result = [];
+
+            arrayItems.forEach(function (str){
+                result.push(str);
+                result.push(str);
+            })
+
+            console.log(result);
+        }
+
+        arrayDouble(myArray);
+
+        let numbers = [1, 5, 8, 10];
+
+        function arraySum(num){
+            let total = 0;
+            num.forEach(function (num){
+                total += num;
+            })
+
+            console.log(total);
+        }
+
+        arraySum(numbers);*/
+
+        //Exercise 8
+        //let todobtn = document.getElementById('todobtn');
+        //function done(){
+          //  todobtn.innerText = 'Done';
+        //}
+        let count =0;
+        
+        function increment(){
+            let counter = document.getElementById('counter');
+            let upbtn = document.getElementById('upbtn');
+            count += 1;
+            counter.innerText = count;
+
+        }
+
+        function decrement(){
+            let downbtn = document.getElementById('downbtn');
+            count -= 1;
+            counter.innerText = count;
+        }
+
+        function copy(){
+            let copybtn = document.getElementById('copybtn');
+            let textbox = document.getElementById('textbox');
+            let text = textbox.value;
+
+            let show = document.createElement('div')
+            show.innerText = text;
+            document.body.appendChild(show);
+        }
+
+</script>
+</body>
+</html>

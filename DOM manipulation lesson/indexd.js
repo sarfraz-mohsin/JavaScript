@@ -18,8 +18,13 @@ yellow.onclick = () => console.log('You clicked yellow');
 green.onclick = () => console.log('You clicked green'); */ //Insted of doing this we can use the loop and make it easier
 
 console.log(colorBox);
-
+const timesClicked = {'red': 0, 'yellow': 0, 'green':0}
 //forEach loop
+
 colorBox.forEach(colorBox => {
-    colorBox.onclick = () =>console.log(colorBox.value)
+    colorBox.onclick = () =>{
+        timesClicked[colorBox.value] +=1
+        colorBox.innerText = timesClicked[colorBox.value]
+    }
 });
+
