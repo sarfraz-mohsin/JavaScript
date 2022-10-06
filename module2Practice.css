@@ -1,0 +1,24 @@
+body{
+    height: 400px;
+    width: 400px;
+}
+
+.Oranges{
+    align-items: center;
+    text-align:center;
+    background-color: rgb(230, 185, 102);
+    height: 50px;
+    width: 350px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+
+.Apples{
+    text-align: center;
+    align-items: center;
+    background-color: rgb(234, 107, 107);
+    border-radius: 25px;
+    height: 50px;
+    width: 350px;
+}
