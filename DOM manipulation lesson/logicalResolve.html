@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pink{
+            display: flex;
+            justify-content: center;
+            background-color: lightcoral;
+            height: 25rem;
+            width: 30rem;
+        }
+
+        .green{
+            display: flex;
+            justify-content: center;
+            background-color: lightgreen;
+            height: 20rem;
+            width: 26rem;
+        }
+        .blue{
+            display: flex;
+            justify-content: center;
+            background-color: lightskyblue;
+            height: 15rem;
+            width: 20rem;
+        }
+        .yellow{
+            display: flex;
+            justify-content: center;
+            background-color: lightyellow;
+            height: 10rem;
+            width: 14rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="pink">
+        <div class="green">
+            <div class="blue">
+                <div class="yellow"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let divEle = document.querySelector("div");
+
+        //iterative solution
+        // while (divEle.children.length > 0) {
+        //     divEle = divEle.children[0];
+        // }
+
+        // divEle.remove();
+
+        //Recursive solution
+        // function removeDeepest(divEle){
+        //     if(divEle.children.length > 0){
+        //         removeDeepest(divEle.children[0])
+        //     }
+        //     else{
+        //         divEle.remove();
+        //     }
+        // }
+        // removeDeepest(divEle);
+
+        //one liner -- not efficient
+            let allDivEle = document.querySelectorAll('div')
+            allDivEle[3].remove();
+
+
+    </script>
+</body>
+</html>

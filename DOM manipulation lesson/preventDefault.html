@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+       table thead th{
+        text-align: center;
+        height: 2rem;
+        width: 4rem;
+        border: 1px solid red;
+        color: white;
+        background-color: black;
+       }
+
+       table tbody td{
+        text-align: center;
+        border: 1px solid black;
+         height: 2rem;
+        width: 4rem;
+        border: 1px solid red;
+       }
+
+       thead, table, tbody{
+        margin-bottom: 5rem;
+        border-collapse: collapse;
+       }
+
+
+    </style>
+</head>
+<body>
+    <h1>DataBase</h1>
+    <table>
+        <thead>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Asif</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sareen</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rizwan</td>
+                <td>75</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="">
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="marks">Marks</label>
+        <input type="number" id="marks">
+
+        <input type="submit" value="submit">
+    </form>
+
+    <script>
+        let formEle = document.querySelector('form');
+        formEle.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            let name = document.querySelector('#name').value;
+            let marks = document.querySelector('#marks').value;
+            let sno = document.querySelectorAll('tbody tr').length +1;
+            
+            let tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${sno}</td>
+                <td>${name}</td>
+                <td>${marks}</td>`;
+
+                let tbody = document.querySelector('tbody');
+                tbody.appendChild(tr);
+        })
+    </script>
+
+</body>
+</html>
